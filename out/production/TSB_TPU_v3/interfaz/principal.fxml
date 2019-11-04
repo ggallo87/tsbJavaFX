@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.PrincipalController">
+   <children>
+      <Label fx:id="lblCarpeta" layoutX="143.0" layoutY="23.0" prefHeight="18.0" prefWidth="322.0" text="D:\Drive\UTN\Trabajos UTN\ANO 3\TECNOLOGIA DE SOFTWARE BASE\TP TSB\resultados" />
+      <Label layoutX="86.0" layoutY="23.0" prefHeight="17.0" prefWidth="71.0" text="Carpeta:" />
+      <Button fx:id="btnCambiar" layoutX="474.0" layoutY="19.0" mnemonicParsing="false" onAction="#cambiarUbicacion" text="Cambiar directorio" />
+      <Button fx:id="btnCargar" layoutX="472.0" layoutY="54.0" mnemonicParsing="false" onAction="#cargar" prefHeight="26.0" prefWidth="115.0" text="Cargar resultados" />
+      <ListView fx:id="lvwResultados" layoutX="24.0" layoutY="187.0" prefHeight="250.0" prefWidth="706.0" />
+      <ComboBox fx:id="cboDistritos" layoutX="68.0" layoutY="98.0" onAction="#elegirDistrito" prefHeight="26.0" prefWidth="250.0" />
+      <ComboBox fx:id="cboSecciones" layoutX="334.0" layoutY="98.0" onAction="#elegirSeccion" prefHeight="26.0" prefWidth="250.0" />
+      <ComboBox fx:id="cboCircuitos" layoutX="82.0" layoutY="142.0" onAction="#elegirCircuito" prefWidth="150.0" />
+      <ComboBox fx:id="cboMesas" layoutX="334.0" layoutY="142.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
